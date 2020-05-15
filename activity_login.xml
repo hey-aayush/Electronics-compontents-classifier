@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#000"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/theme_">
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:transitionName="logo_Image"
+        android:src="@drawable/search"
+        android:id="@+id/logo_Image"/>
+    <ImageView
+        android:layout_width="27dp"
+        android:layout_height="32dp"
+        android:transitionName="logo_Image2"
+android:layout_marginLeft="15dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/e"
+        android:id="@+id/logo_Image2"
+        tools:ignore="DuplicateIds" />
+
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:padding="30dp"
+        android:orientation="vertical"
+        android:layout_marginTop="-125dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="142dp"
+            android:layout_height="142dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/round">
+
+            <ImageView
+                android:id="@+id/profile"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+
+                android:layout_marginTop="10dp"
+                android:src="@drawable/profiles"
+
+                />
+        </FrameLayout>        </RelativeLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:outlineAmbientShadowColor="@color/colorAccent"
+            android:transitionName="email_image"
+            android:layout_marginTop="60dp"
+            android:textColorHint="@color/colorAccent"
+            app:startIconDrawable="@drawable/ic_email_black_24dp"
+            app:startIconTint="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:focusableInTouchMode="false"
+
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/logemail"
+                android:textColor="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+android:textColorHint="@color/colorAccent"
+                android:inputType="textEmailAddress"
+                android:textSize="20sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+android:textColorHint="@color/colorAccent"
+            app:startIconDrawable="@drawable/ic_lock_black_24dp"
+            app:startIconTint="@color/colorAccent"
+            android:transitionName="password_image"
+            android:layout_marginTop="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:focusableInTouchMode="false"
+            app:passwordToggleEnabled="true"
+
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/logPassword"
+                android:textColor="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="text"
+                android:textSize="20sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="80dp"
+android:transitionName="btn_Image"
+android:textColor="#52595A"
+            android:background="@drawable/button_rounded"
+            android:text="SIGN IN"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="New Here? Create Account"
+            android:textAlignment="center"
+            android:id="@+id/createText"
+
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Fogrgot Password"
+            android:textAlignment="center"
+            android:id="@+id/forgotPassword"
+            android:textSize="14sp" />
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+
+             />
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
