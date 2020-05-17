@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Upload Files</title>
+
+</head>
+
+<body>
+    
+      
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="files[]" multiple>
+        <input type="submit" value="Upload File" name="submit">
+    </form>
+    <p id = "result"></p>
+	<script>
+const url = 'http://127.0.0.1:5000/api/image_pridiction';
+const form = document.querySelector('form');
+
+form.addEventListener('submit', e => {
+    e.preventDefault();
+
+    const files = document.querySelector('[type=file]').files;
+    const formData = new FormData();
+
+    for (let i = 0; i < files.length; i++) {
+        let file = files[i];
+
+        formData.append('imagefile', file);
+    }
+
+    fetch(url, {
+        method: 'POST',
+        body: formData
+    }).then(response => {
+        return response.text();
+    }).then(data => {
+        document.getElementById("result").innerHTML = data; 
+        console.log(data);
+    });
+});
+
+
+</script>
+</body>
+
+</html>
