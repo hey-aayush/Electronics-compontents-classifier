@@ -18,6 +18,7 @@
         <input type="submit" value="Upload File" name="submit">
     </form>
     <p id = "result"></p>
+    <p id = "result1"></p>
 	<script>
 const url = 'http://127.0.0.1:5000/api/image_pridiction';
 const form = document.querySelector('form');
@@ -44,6 +45,16 @@ form.addEventListener('submit', e => {
         console.log(data);
     });
 });
+
+
+    var text;
+    var color = result.value;
+    if (color == "memory-chip")
+    {
+        text = "hii \n I am ultrasonic";
+        document.getElementById("result1").innerHTML = text;
+        console.log(data);
+    }
 
 
 </script>
