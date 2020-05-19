@@ -9,8 +9,8 @@ import numpy as np
 import cv2
 import os
 
-vgg16=load_model("./models/VGG16_model.h5")
-model = load_model("./models/complete_model.h5")
+#vgg16=load_model("./models/VGG16_model.h5")
+#model = load_model("./models/complete_model.h5")
 
 
 def pridiction_images(vgg16,model,img):
@@ -28,7 +28,7 @@ def pridiction_images(vgg16,model,img):
     return inv_map[class_predicted[0]]
 
 app=Flask(__name__)
-CORS(app)
+#CORS(app)
 
 
 
