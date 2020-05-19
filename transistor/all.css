@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color:white;
+}
+
+.header{
+    padding: 3em;
+    margin: auto;
+}
+.container{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container img{
+    width: 20%;
+    bottom: 3px;
+
+}
+.para{
+   
+    font-size: 25px;
+    font-weight: bold;
+    padding: 1em;
+
+}
+.para1 a{
+  color: blue;
+    
+}
+.para1{
+    font-size: 16px;
+    justify-content: left;
+    padding: 0.9em;
+}
+.wiki{
+    color: black;
+    background: skyblue;
+    border: solid skyblue;
+    border-radius: 5px;
+   
+}
+.para2{
+    padding: 0.6em;
+}
+@media (max-width :800px){
+    .container img{
+        width: 300px;
+        bottom: 3px;
+    }
+}
