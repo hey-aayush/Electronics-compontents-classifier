@@ -19,7 +19,7 @@ function preview(){
         img.setAttribute('src',result);
     }
 }
-const url = "{{ url_for('api/image_pridiction') }};"
+const url = "{{ url_for('image_prediction') }}"
 const form = document.querySelector('form');
 
 form.addEventListener('submit', e => {

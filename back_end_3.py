@@ -39,13 +39,14 @@ def index():
     return render_template('main.html')
 
 
-@app.route('/api/image_pridiction',methods=['POST'])
+@app.route("/image_prediction",methods=['POST'])
 
-def image_pridiction():
+def image_prediction():
 
     imagefile = request.files.get('imagefile', '')
     imagefile.save('./test_image.jpg')
     img = cv2.imread('./test_image.jpg')
+    #img = cv2.imread(imagefile)
     results=pridiction_images(vgg16,model,img)
     return results
     
