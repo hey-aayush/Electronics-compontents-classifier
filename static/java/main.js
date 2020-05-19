@@ -19,7 +19,7 @@ function preview(){
         img.setAttribute('src',result);
     }
 }
-const url = "http://127.0.0.1:5000/api/image_prediction"
+const url = "https://search-e-webapp.herokuapp.com/api/image_prediction"
 const form = document.querySelector('form');
 
 form.addEventListener('submit', e => {
