@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autbots</title>
+
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}">
+   {% block head %}{% endblock %}
+
+</head>
+<body >
+
+    {% block body %}{% endblock %}
+
+    <nav>
+        <div class="box">
+            
+                <input type="text" name="" placeholder="Search here..">
+                <input type="submit" value="Search" name="">
+            
+        </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-link">
+            <li><a href="#">Sanyam</a></li>
+            <li><a href="#">Saurabh</a></li>
+            <li><a href="#">Alok</a></li>
+            <li><a href="#">Aayush</a></li>
+        </ul>
+    </nav>
+    <div class="main1">
+    <div class="main">
+       
+     <form method="post" enctype="multipart/form-data">
+        <input type="file" name="files[]" id="fileToUpload">
+        <input type="submit" value="Upload File" name="submit">
+        <!-- <button type="submit" value="Upload File" name="submit" class="btn">Upload File</button> -->
+        <img id="preview">
+    </form>
+      </div>  
+      <p id="result"></p>
+      <p id="result1"></p>
+    </div>
+    
+    <script src="{{ url_for('static',filename='/main.js') }}"></script>
+
+</body>
+</html>
