@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:textAlignment="center"
+    android:background="#fff"
+    android:textDirection="firstStrong"
+    tools:context=".SplashScreen">
+    <View
+        android:id="@+id/search"
+
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:layout_marginStart="80dp"
+        android:transitionName="logo_Image"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.343" />
+
+    <View
+        android:id="@+id/e"
+        android:layout_width="70dp"
+        android:layout_height="90dp"
+
+        android:transitionName="logo_Image2"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="-160dp"
+        android:layout_marginBottom="380dp"
+        android:background="@drawable/e"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</LinearLayout>
+
