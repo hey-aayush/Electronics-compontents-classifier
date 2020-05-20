@@ -21,7 +21,7 @@ Features of android app:
 
 Demo of this app is in this video, copy and paste the link in browser: 
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ,,,https://www.youtube.com/watch?v=V9KzazSmjBs
+    https://www.youtube.com/watch?v=V9KzazSmjBs
 
 
 Various technologies or libraries we used:
