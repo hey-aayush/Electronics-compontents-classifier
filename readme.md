@@ -28,8 +28,8 @@ Various technologies or libraries we used:
 1. Deep Learning
 2. Android Development
 3. Web Development
-4TensorFlow
-5   . Flask
+4. TensorFlow
+5.Flask
 
 Database Used: Firebase
 
