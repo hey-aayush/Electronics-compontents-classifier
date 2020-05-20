@@ -36,17 +36,16 @@ CORS(app)
 @app.route("/",methods=['GET','POST'])
 def index():
     
-    return render_template('main.html')
+    return render_template('home.html')
 
 
-@app.route("/image_prediction",methods=['POST'])
+@app.route('/api/image_prediction',methods=['POST'])
 
 def image_prediction():
 
     imagefile = request.files.get('imagefile', '')
     imagefile.save('./test_image.jpg')
     img = cv2.imread('./test_image.jpg')
-    #img = cv2.imread(imagefile)
     results=pridiction_images(vgg16,model,img)
     return results
     

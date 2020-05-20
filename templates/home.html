@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/home_2.css') }}">
+    <title>Autbots</title>
+</head>
+
+<style>
+    body {
+      background-image: url("{{ url_for('static',filename='imp_image/back3.jpg') }}");
+    }
+    </style>
+
+<body>
+
+    <nav>
+        <img src="{{ url_for('static',filename='imp_image/search.jpeg') }}">
+        <h1>S</h1>
+        <h1>E</h1>
+        <h1>A</h1>
+        <h1>R</h1>
+        <h1>C</h1>
+        <h1>H</h1>
+        <h1>-</h1>
+        <h1>e</h1>
+
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+        <ul class="nav-link" id="myDropdown">
+            
+            
+            <input type="text" name="" placeholder="Search here.." id="myInput" onkeyup="filterFunction()">
+                
+            
+            
+            <li><a href="https://571sanyam.github.io/ir/IR.html"><img src="{{ url_for('static',filename='imp_image/IR.jpg') }}">IR sensor</a></li>
+            <li><a href="https://571sanyam.github.io/buzzer/Buzzer.html"><img src="{{ url_for('static',filename='imp_image/buzzer.jpg') }}">Buzzer</a></li>
+            <li><a href="https://571sanyam.github.io/dht/DHT-22.html"><img src="{{ url_for('static',filename='imp_image/DHT-22.jpg') }}">DHT 22</a></li>
+            <li><a href="https://571sanyam.github.io/Camera/camera.html"><img src="{{ url_for('static',filename='imp_image/camera.jpg') }}">Camera</a></li>
+            <li><a href="https://571sanyam.github.io/fuse/Cartridgefuse.html"><img src="{{ url_for('static',filename='imp_image/cartidge-fuse.jpg') }}">cartidge-fuse</a></li>
+            <li><a href="https://571sanyam.github.io/clip/clip-lead.html"><img src="{{ url_for('static',filename='imp_image/clip-lead.jpg') }}">clip-lead</a></li>
+            <li><a href="https://571sanyam.github.io/potentiometer/potentiometer.html"><img src="{{ url_for('static',filename='imp_image/potentiometer.jpg') }}">potentiometer</a></li>
+            <li><a href="https://571sanyam.github.io/filament/Filament.html"><img src="{{ url_for('static',filename='imp_image/filament.jpg') }}">Filament</a></li>
+            <li><a href="https://571sanyam.github.io/flame/FlameSensor.html"><img src="{{ url_for('static',filename='imp_image/Flame sensor.jpg') }}">Flame sensor</a></li>
+            <li><a href="https://571sanyam.github.io/induction/Induction.html"><img src="{{ url_for('static',filename='imp_image/induction coil.jpg') }}">induction coil</a></li>
+            <li><a href="https://571sanyam.github.io/led/led.html"><img src="{{ url_for('static',filename='imp_image/led.jpg') }}">LED</a></li>
+            <li><a href="https://571sanyam.github.io/lpg/LPG.html"><img src="{{ url_for('static',filename='imp_image/LPG.jpg') }}">LPG</a></li>
+            <li><a href="https://571sanyam.github.io/memorychip/Memorychip.html"><img src="{{ url_for('static',filename='imp_image/Memory chip.jpg') }}">Memory chip</a></li>
+            <li><a href="https://571sanyam.github.io/moisture/Moisture.html#"><img src="{{ url_for('static',filename='imp_image/moisture.jpg') }}">moisture</a></li>
+            <li><a href="https://571sanyam.github.io/mpu/MPU.html"><img src="{{ url_for('static',filename='imp_image/MPU.jpg') }}">MPU</a></li>
+            <li><a href="https://571sanyam.github.io/multiplexer/multiplexer.html"><img src="{{ url_for('static',filename='imp_image/Multiplexer.jpg') }}">Multiplexer</a></li>
+            <li><a href="https://571sanyam.github.io/raspberry-pi/camera.html"><img src="{{ url_for('static',filename='imp_image/pi.jpg') }}">Rasberry pi</a></li>
+            <li><a href="https://571sanyam.github.io/pulse/Pulse.html"><img src="{{ url_for('static',filename='imp_image/pulse.jpg') }}">Pulse generator</a></li>
+            <li><a href="https://571sanyam.github.io/relay/camera.html"><img src="{{ url_for('static',filename='imp_image/relay.jpg') }}">Relay</a></li>
+            <li><a href="https://571sanyam.github.io/shunt/camera.html"><img src="{{ url_for('static',filename='imp_image/shunt.jpg') }}">Shunt</a></li>
+            <li><a href="https://571sanyam.github.io/stabilizer/camera.html"><img src="{{ url_for('static',filename='imp_image/stabilizer.jpg') }}">Stabilizer</a></li>
+            <li><a href="https://571sanyam.github.io/transistor/camera.html"><img src="{{ url_for('static',filename='imp_image/transistor.jpg') }}">Transistor</a></li>
+            <li><a href="https://571sanyam.github.io/ultrasonic/camera.html"><img src="{{ url_for('static',filename='imp_image/ultrasonic.jpg') }}">Ultrasonic</a></li>
+
+
+        </ul>
+   
+    <div class="main1">
+        
+    <div class="main">
+       
+     <form method="post" enctype="multipart/form-data">
+        
+        <input type="file" name="files[]" id="fileToUpload">
+
+        <img id="preview">
+        <input type="submit" value="Submit" name="submit">
+        <!-- <button type="submit" value="Upload File" name="submit" class="btn">Upload File</button> -->
+        <p id="result" class="para"></p>
+    </form>
+    
+      <p id="result1" class="para"></p>
+      <p id="result2" class="para"></p>
+      <p id="result3" class="para"></p>
+      </div>  
+      
+    </div>
+
+    <script src="{{ url_for('static',filename='js/home.js') }}"> </script>
+
+</body>
+</html>
